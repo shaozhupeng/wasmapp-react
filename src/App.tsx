@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Connect from './wallet_connect/Connect';
+import Query from './wallet_connect/Query';
+import SignWallet from './wallet_connect/SignWallet'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Connect />
+        <Query />
+        <SignWallet />
       </header>
     </div>
   );
